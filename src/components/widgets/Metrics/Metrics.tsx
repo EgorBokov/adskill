@@ -5,9 +5,10 @@ import { useEffect } from 'react'
 
 export const Metrics = () => {
   const dispatch = useAppDispatch()
+
   useEffect(() => {
     dispatch(loadMetricsThunk())
-  }, [])
+  }, [dispatch])
 
   return (
     <div>

@@ -56,11 +56,11 @@ export const offersSlice = createSlice({
 
 export const { setSort, clearSort } = offersSlice.actions
 export const offersSliceSelector = (state: RootState) => state.offers
-export const offersTotalBalanceSelector = (state: RootState) => { 
-  const offers = state.offers;
-  if (!offers.data || offers.data?.length === 0) { 
-    return 0;
+export const offersTotalBalanceSelector = (state: RootState) => {
+  const offers = state.offers
+  if (!offers.data || offers.data?.length === 0) {
+    return 0
   }
 
-  return offers.data.reduce((acc, value) => value.balance + acc, 0);
+  return offers.data.reduce((acc, value) => value.balance + acc, 0)
 }

@@ -1,1 +1,1 @@
-export { TotalBalance } from './TotalBalance';
+export { TotalBalance } from './TotalBalance'
