@@ -1,8 +1,7 @@
 import { useMemo, useState } from 'react'
 import cn from 'classnames'
 import { useAppDispatch, useAppSelector } from '@/store'
-import { loadOffersThunk, setSort, clearSort, offersSliceSelector } from '@/store/offersSlice'
-import { useEffect } from 'react'
+import { setSort, clearSort, offersSliceSelector } from '@/store/offersSlice'
 import { PlatformIcons } from '@/components/shared/PlatformIcons/PlatformIcons'
 import { MoreActionIcon } from '@/components/shared/icons/MoreActionIcon'
 import { StatusBadge } from '@/components/shared/StatusBadge/StatusBadge'
@@ -15,10 +14,6 @@ export const OffersTable = () => {
   const dispatch = useAppDispatch()
   const { data, isLoading, sortBy, sortOrder } = useAppSelector(offersSliceSelector)
   const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set())
-
-  useEffect(() => {
-    dispatch(loadOffersThunk())
-  }, [dispatch])
 
   const sortedOffers = useMemo(() => {
     if (!data) return []
