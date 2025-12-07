@@ -1,0 +1,257 @@
+import type { MetricsResponseType } from '@/types'
+
+export const INCREASE_METRIC = 'increase'
+export const DECREASE_METRIC = 'decrease'
+
+export const CURRENCY_FORMAT = 'currency'
+export const FLOAT_FORMAT = 'float'
+export const INTEGER_FORMAT = 'integer'
+
+export const mockData: MetricsResponseType = {
+  currentMetrics: {
+    expenses: {
+      value: 15423.0,
+      change: 24,
+      format: CURRENCY_FORMAT,
+      title: 'Расходы',
+      changeType: 'increase',
+      previousValue: 12437.1,
+    },
+    clicks: {
+      value: 323,
+      change: 100,
+      title: 'Клики',
+      format: INTEGER_FORMAT,
+      changeType: 'increase',
+      previousValue: 162,
+    },
+    cpc: {
+      value: 4.0,
+      change: 2,
+      title: 'CPC',
+      format: FLOAT_FORMAT,
+      changeType: 'decrease',
+      previousValue: 4.08,
+    },
+    cpa: {
+      value: 4.44,
+      change: 3,
+      title: 'CPA',
+      format: INTEGER_FORMAT,
+      changeType: 'increase',
+      previousValue: 4.31,
+    },
+  },
+  offers: [
+    {
+      id: 'offer_001',
+      name: 'Продажа мебели',
+      status: 'active',
+      launchDate: '2025-06-23T00:00:00Z',
+      balance: 15423.0,
+      spent: 15423.0,
+      platforms: [
+        {
+          id: 'google',
+          name: 'Google Ads',
+          color: '#4285F4',
+        },
+        {
+          id: 'yandex',
+          name: 'Яндекс.Директ',
+          color: '#FC3F1D',
+        },
+        {
+          id: 'avito',
+          name: 'Авито',
+          color: '#00AAFF',
+        },
+      ],
+    },
+    {
+      id: 'offer_002',
+      name: 'Ступья 2.0',
+      status: 'stopped',
+      launchDate: '2025-06-23T00:00:00Z',
+      balance: 15423.0,
+      spent: 15423.0,
+      platforms: [
+        {
+          id: 'vk',
+          name: 'VK Реклама',
+          color: '#0077FF',
+        },
+        {
+          id: 'telegram',
+          name: 'Telegram Ads',
+          color: '#0088CC',
+        },
+      ],
+    },
+    {
+      id: 'offer_003',
+      name: 'Доставка еды Premium',
+      status: 'active',
+      launchDate: '2025-07-15T00:00:00Z',
+      balance: 28500.0,
+      spent: 22100.0,
+      platforms: [
+        {
+          id: 'google',
+          name: 'Google Ads',
+          color: '#4285F4',
+        },
+        {
+          id: 'tiktok',
+          name: 'TikTok Ads',
+          color: '#000000',
+        },
+      ],
+    },
+    {
+      id: 'offer_004',
+      name: 'Онлайн-курсы IT',
+      status: 'active',
+      launchDate: '2025-08-01T00:00:00Z',
+      balance: 45000.0,
+      spent: 38200.0,
+      platforms: [
+        {
+          id: 'google',
+          name: 'Google Ads',
+          color: '#4285F4',
+        },
+        {
+          id: 'vk',
+          name: 'VK Реклама',
+          color: '#0077FF',
+        },
+        {
+          id: 'yandex',
+          name: 'Яндекс.Директ',
+          color: '#FC3F1D',
+        },
+      ],
+    },
+    {
+      id: 'offer_005',
+      name: 'Автозапчасти',
+      status: 'paused',
+      launchDate: '2025-05-10T00:00:00Z',
+      balance: 8500.0,
+      spent: 12300.0,
+      platforms: [
+        {
+          id: 'yandex',
+          name: 'Яндекс.Директ',
+          color: '#FC3F1D',
+        },
+        {
+          id: 'avito',
+          name: 'Авито',
+          color: '#00AAFF',
+        },
+      ],
+    },
+    {
+      id: 'offer_006',
+      name: 'Фитнес-клуб Премиум',
+      status: 'active',
+      launchDate: '2025-09-12T00:00:00Z',
+      balance: 32000.0,
+      spent: 28500.0,
+      platforms: [
+        {
+          id: 'vk',
+          name: 'VK Реклама',
+          color: '#0077FF',
+        },
+        {
+          id: 'telegram',
+          name: 'Telegram Ads',
+          color: '#0088CC',
+        },
+      ],
+    },
+    {
+      id: 'offer_007',
+      name: 'Интернет-магазин электроники',
+      status: 'active',
+      launchDate: '2025-04-20T00:00:00Z',
+      balance: 52000.0,
+      spent: 48900.0,
+      platforms: [
+        {
+          id: 'google',
+          name: 'Google Ads',
+          color: '#4285F4',
+        },
+        {
+          id: 'yandex',
+          name: 'Яндекс.Директ',
+          color: '#FC3F1D',
+        },
+        {
+          id: 'vk',
+          name: 'VK Реклама',
+          color: '#0077FF',
+        },
+      ],
+    },
+    {
+      id: 'offer_008',
+      name: 'Стоматология',
+      status: 'paused',
+      launchDate: '2025-03-15T00:00:00Z',
+      balance: 12000.0,
+      spent: 9800.0,
+      platforms: [
+        {
+          id: 'yandex',
+          name: 'Яндекс.Директ',
+          color: '#FC3F1D',
+        },
+        {
+          id: 'google',
+          name: 'Google Ads',
+          color: '#4285F4',
+        },
+      ],
+    },
+    {
+      id: 'offer_009',
+      name: 'Юридические услуги',
+      status: 'stopped',
+      launchDate: '2025-02-10T00:00:00Z',
+      balance: 5000.0,
+      spent: 15200.0,
+      platforms: [
+        {
+          id: 'yandex',
+          name: 'Яндекс.Директ',
+          color: '#FC3F1D',
+        },
+      ],
+    },
+    {
+      id: 'offer_010',
+      name: 'Ремонт квартир под ключ',
+      status: 'active',
+      launchDate: '2025-10-01T00:00:00Z',
+      balance: 18000.0,
+      spent: 12500.0,
+      platforms: [
+        {
+          id: 'avito',
+          name: 'Авито',
+          color: '#00AAFF',
+        },
+        {
+          id: 'yandex',
+          name: 'Яндекс.Директ',
+          color: '#FC3F1D',
+        },
+      ],
+    },
+  ],
+}

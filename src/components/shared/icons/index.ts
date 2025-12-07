@@ -1,0 +1,8 @@
+export { CalendarIcon } from './CalendarIcon'
+export { CpaPlusIcon } from './CpaPlusIcon'
+export { CpaScheduleIcon } from './CpaScheduleIcon'
+export { ShareExternalIcon } from './ShareExternalIcon'
+export { SocialMediaIcon } from './SocialMediaIcon'
+export { MonitoringIcon } from './MonitoringIcon'
+export { FinanceIcon } from './FinanceIcon'
+export { TrendArrowIcon } from './TrendArrowIcon'

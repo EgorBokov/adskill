@@ -1,0 +1,117 @@
+.tableWrapper {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #e7e7f5;
+  border-radius: 24px;
+  background: white;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  table-layout: fixed;
+}
+
+thead {
+  background-color: #f9fafb;
+  border-bottom: 1px solid #e7e7f5;
+}
+
+th {
+  padding: 16px 24px;
+  text-align: left;
+  font-weight: 500;
+  color: #6b7280;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.sortableHeader {
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.2s;
+
+  &:hover {
+    color: #374151;
+  }
+}
+
+.checkboxColumn {
+  width: 48px;
+  text-align: center;
+  padding: 16px 12px;
+}
+
+.actionsColumn {
+  width: 48px;
+  text-align: center;
+  padding: 16px 12px;
+}
+
+.nameColumn {
+  width: 20%;
+}
+
+.platformsColumn {
+  width: 15%;
+}
+
+.dateColumn {
+  width: 12%;
+}
+
+.balanceColumn {
+  width: 12%;
+}
+
+.spentColumn {
+  width: 12%;
+}
+
+.statusColumn {
+  width: 12%;
+}
+
+td {
+  padding: 16px 24px;
+  border-bottom: 1px solid #e7e7f5;
+  color: #111827;
+}
+
+tbody tr {
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #f9fafb;
+  }
+
+  &:last-child td {
+    border-bottom: none;
+  }
+}
+
+.menuButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #f3f4f6;
+  }
+}
+
+.loading,
+.empty {
+  padding: 48px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+}

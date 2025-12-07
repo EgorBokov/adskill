@@ -1,0 +1,64 @@
+.iconWrapper {
+  background-color: #f3f5fa;
+  border-radius: 16px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerLine {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.bottomLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid #e7e7f5;
+  border-radius: 24px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.metricValue {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.increase {
+  color: #079455;
+
+  svg {
+    path {
+      stroke: #079455;
+    }
+  }
+}
+
+.decrease {
+  color: #da022a;
+
+  svg {
+    transform: rotateX(180deg);
+    path {
+      stroke: #da022a;
+    }
+  }
+}
+
+.metricType {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}

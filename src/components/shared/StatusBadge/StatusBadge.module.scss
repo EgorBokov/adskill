@@ -1,0 +1,23 @@
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.active {
+  background-color: #e6f7ed;
+  color: #079455;
+}
+
+.stopped {
+  background-color: #fee;
+  color: #da022a;
+}
+
+.paused {
+  background-color: #fff4e6;
+  color: #f59e0b;
+}

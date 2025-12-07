@@ -1,0 +1,45 @@
+.lineTitle { 
+    color: #A8A8C5;
+}
+
+.lineValue { 
+    color: #000;
+}
+
+.linesContainer { 
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.lineContainer { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.balanceWrapper { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.container { 
+    font-size: 16px;
+}
+
+.balanceTitle { 
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.balanceValue { 
+    font-weight: 500;
+    font-size: 24px;
+    color: #1B3ED7;
+}
+
+.wrapper { 
+    max-width: 440px;
+}
